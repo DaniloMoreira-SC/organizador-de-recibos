@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://js.puter.com/v2/"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Recibos</title>
+</head>
+
+<body>
+   <div class="topo">
+        <h1>Registro de Recibos</h1>
+        <p>Fotografe o comprovante aqui.</p>
+        <p>Nosso serviço organiza para você.</p> 
+    </div>
+
+    <div class="total-gasto">
+        <p>Total gasto</p>
+        <h2 id="valor-total">R$ 0,00</h2>
+        <p id="qtd-comprovantes">0 comprovantes lidos</p>
+    </div>
+
+    <label class="label">
+        📷 Toque aqui para fotografar o comprovante
+        <input class="foto" onchange="lerFoto()" type="file" accept="image/*">
+    </label>
+
+    <div class="resultado" id="resultado"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
